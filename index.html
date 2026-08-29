@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عيادات نبض التخصصية | رعاية صحية متكاملة في مكان واحد</title>
+<meta name="description" content="عيادات نبض التخصصية بالرحاب - نخبة من الأطباء المختصين لتقديم رعاية صحية شاملة: أطفال، باطنية، نسائية وتوليد، جلدية، عمود فقري وأعصاب، وأكثر.">
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Loader ===== -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-pulse">
+    <svg viewBox="0 0 200 80" class="loader-ekg">
+      <polyline points="0,40 40,40 55,10 70,70 85,40 200,40" />
+    </svg>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#hero" class="brand" aria-label="عيادات نبض التخصصية - الصفحة الرئيسية">
+      <img src="assets/logo.png" alt="شعار عيادات نبض التخصصية" class="brand-logo">
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="التنقل الرئيسي">
+      <ul>
+        <li><a href="#hero" class="nav-link active-link">الرئيسية</a></li>
+        <li><a href="#about" class="nav-link">عن العيادة</a></li>
+        <li><a href="#departments" class="nav-link">الأقسام</a></li>
+        <li><a href="#doctors" class="nav-link">أطباؤنا</a></li>
+        <li><a href="#location" class="nav-link">الموقع</a></li>
+        <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://wa.me/201097963216" target="_blank" rel="noopener noreferrer" class="btn btn-primary header-cta">
+      <span>احجز موعدك</span>
+      <svg viewBox="0 0 24 24" class="icon-inline"><path d="M12 21c-4.97-4.2-8-7.66-8-11.2A5.8 5.8 0 0 1 9.8 4c1.64 0 3.13.8 4.2 2.05A5.75 5.75 0 0 1 18.2 4 5.8 5.8 0 0 1 24 9.8"/></svg>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <svg class="hero-ekg-line" viewBox="0 0 1440 260" preserveAspectRatio="none">
+        <polyline class="ekg-path" points="0,150 220,150 260,60 300,220 340,150 1440,150" />
+      </svg>
+      <div class="hero-blob blob-blue"></div>
+      <div class="hero-blob blob-red"></div>
+      <div class="hero-dot dot-1"></div>
+      <div class="hero-dot dot-2"></div>
+      <div class="hero-dot dot-3"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <p class="eyebrow hero-reveal">عيادات نبض التخصصية الشاملة</p>
+      <h1 class="hero-title">
+        <span class="hero-reveal">مرحباً بكم في</span>
+        <span class="hero-reveal hero-title-brand">نبض<span class="dot-accent">.</span></span>
+      </h1>
+      <p class="hero-sub hero-reveal">
+        نخبة من الأطباء المختصين لتقديم رعاية صحية متكاملة في مكان واحد — لأن نبضكم يستحق أفضل رعاية.
+      </p>
+      <div class="hero-actions hero-reveal">
+        <a href="#departments" class="btn btn-primary">
+          <span>تصفّح الأقسام</span>
+        </a>
+        <a href="#location" class="btn btn-outline">
+          <span>موقع العيادة</span>
+        </a>
+      </div>
+
+      <div class="hero-stats hero-reveal">
+        <div class="stat">
+          <span class="stat-num" data-count="9">0</span>
+          <span class="stat-label">تخصصات طبية</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="1">0</span>
+          <span class="stat-label">مكان واحد شامل</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-num heart-live">♥</span>
+          <span class="stat-label">رعاية بلا توقف</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="التمرير للأسفل">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== About / Why us ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <p class="eyebrow">لماذا نبض</p>
+        <h2>رعاية صحية شاملة بمعايير موثوقة</h2>
+        <p class="section-desc">نجمع لكم نخبة من الاستشاريين والأخصائيين تحت سقف واحد، لتوفير الوقت والجهد وضمان استمرارية المتابعة الطبية.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal-up">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 21c-4.97-4.2-8-7.66-8-11.2A5.8 5.8 0 0 1 9.8 4c1.64 0 3.13.8 4.2 2.05A5.75 5.75 0 0 1 18.2 4 5.8 5.8 0 0 1 24 9.8 5.4 5.4 0 0 1 22.94 13"/><polyline points="1 12 6 12 8.5 6 11.5 16 14 12 23 12"/></svg>
+          </div>
+          <h3>رعاية متكاملة</h3>
+          <p>تخصصات متعددة تتكامل معاً لمتابعة حالتكم الصحية من كل الجوانب.</p>
+        </div>
+
+        <div class="feature-card reveal-up">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 20h5v-2a4 4 0 0 0-3-3.87"/><path d="M9 20H4v-2a4 4 0 0 1 3-3.87"/><circle cx="9" cy="7" r="4"/><path d="M14.5 7a4 4 0 1 1 0 8"/></svg>
+          </div>
+          <h3>نخبة من الأطباء</h3>
+          <p>استشاريون وأخصائيون في تسعة تخصصات طبية مختلفة بخبرات موثوقة.</p>
+        </div>
+
+        <div class="feature-card reveal-up">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </div>
+          <h3>سهولة الحجز والمتابعة</h3>
+          <p>مكان واحد لجميع زياراتكم الطبية، لمتابعة سلسة دون تنقل بين العيادات.</p>
+        </div>
+
+        <div class="feature-card reveal-up">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>ثقة وخصوصية</h3>
+          <p>بيئة طبية مريحة وآمنة تضع راحة المريض وخصوصيته في المقام الأول.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Departments ===== -->
+  <section class="departments" id="departments">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <p class="eyebrow">الأقسام المتوفرة</p>
+        <h2>تخصصاتنا الطبية</h2>
+        <p class="section-desc">تسعة أقسام طبية متخصصة يقدمها فريق طبي مؤهل لخدمتكم في مكان واحد.</p>
+      </div>
+
+      <div class="dept-grid">
+
+        <article class="dept-card reveal-up">
+          <div class="dept-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M6 21c0-3.5 2.5-6 6-6s6 2.5 6 6"/><path d="M9 8c.5 1 1.5 1.5 3 1.5S14.5 9 15 8"/></svg>
+          </div>
+          <h3>طب الأطفال</h3>
+          <p>متابعة نمو وتطور الأطفال والرعاية الصحية الشاملة لهم.</p>
+        </article>
+
+        <article class="dept-card reveal-up">
+          <div class="dept-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="2"/><path d="M12 6.5v6l-4 3M12 12.5l4 3"/><path d="M8 15.5 5 21M16 15.5l3 5.5"/></svg>
+          </div>
+          <h3>العلاج الطبيعي</h3>
+          <p>برامج تأهيل وعلاج طبيعي مخصصة لاستعادة الحركة والوظيفة.</p>
+        </article>
+
+        <article class="dept-card reveal-up">
+          <div class="dept-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C.5 8 2 4 6 4c2 0 3.3 1 4 2 .7-1 2-2 4-2 4 0 5.5 4 3.5 8-2.5 4.5-5.5 9-5.5 9Z"/><path d="M4 10h3l1.5-2.5L10 12l1.5-2H15"/></svg>
+          </div>
+          <h3>الأمراض الباطنية</h3>
+          <p>تشخيص ومتابعة الأمراض الداخلية والحالات الصحية العامة.</p>
+        </article>
+
+        <article class="dept-card reveal-up">
+          <div class="dept-icon">
+            <svg viewBox="0 0 24 24"><path d="M8 5a3 3 0 0 1 3 3v1a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 2-1 3-1 5a3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1-3 3 3 3 0 0 1-3-3c0-2-1-3-1-5a3 3 0 0 1 3-3Z"/></svg>
+          </div>
+          <h3>الروماتيزم</h3>
+          <p>علاج التهابات المفاصل والأمراض الروماتيزمية المزمنة.</p>
+        </article>
+
+        <article class="dept-card reveal-up">
+          <div class="dept-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M9 6h2M13 6h2M8 10h2M14 10h2M9 14h2M13 14h2M8 18h2M14 18h2"/><circle cx="12" cy="3" r="1.6"/></svg>
+          </div>
+          <h3>العمود الفقري والأعصاب</h3>
+          <p>تشخيص وعلاج مشاكل العمود الفقري والجهاز العصبي.</p>
+        </article>
+
+        <article class="dept-card reveal-up">
+          <div class="dept-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M9 10.5C6.5 12 6 15 6 17c0 2.5 2 4 6 4s6-1.5 6-4c0-2-.5-5-3-6.5"/></svg>
+          </div>
+          <h3>النسائية والتوليد</h3>
+          <p>متابعة صحة المرأة خلال جميع المراحل بما فيها الحمل والولادة.</p>
+        </article>
+
+        <article class="dept-card reveal-up">
+          <div class="dept-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 3c3 3 6 6.5 6 10.5A6 6 0 0 1 6 13.5C6 9.5 9 6 12 3Z"/><path d="M9.5 15c1 1 4 1 5-1"/></svg>
+          </div>
+          <h3>التغذية العلاجية</h3>
+          <p>خطط غذائية علاجية مخصصة تدعم الشفاء وتحسّن الصحة العامة.</p>
+        </article>
+
+        <article class="dept-card reveal-up">
+          <div class="dept-icon">
+            <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+          </div>
+          <h3>الجلدية والتناسلية</h3>
+          <p>تشخيص وعلاج أمراض الجلد والشعر والأمراض التناسلية.</p>
+        </article>
+
+        <article class="dept-card reveal-up">
+          <div class="dept-icon">
+            <svg viewBox="0 0 24 24"><path d="M9 3c-3 1-4.5 4-4.5 7.5S6 19 9 21c1.5-1 2-2.5 2-4.5v-9C11 5.5 10.5 4 9 3Z"/><path d="M15 3c3 1 4.5 4 4.5 7.5S18 19 15 21"/></svg>
+          </div>
+          <h3>الكلى والمسالك البولية</h3>
+          <p>تشخيص وعلاج أمراض الكلى والجهاز البولي بمتابعة دقيقة.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Doctors ===== -->
+  <section class="doctors" id="doctors">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <p class="eyebrow">فريقنا الطبي</p>
+        <h2>أطباء كل تخصص</h2>
+        <p class="section-desc">مقعد بانتظار كل استشاري — بيانات الأطباء وصورهم قيد الإضافة حالياً وسيتم تحديثها قريباً.</p>
+      </div>
+
+      <div class="doctors-grid">
+
+        <article class="doctor-card reveal-up">
+          <div class="doctor-avatar avatar-f">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          </div>
+          <span class="doctor-badge">قريباً</span>
+          <h3>استشارية طب الأطفال</h3>
+          <p class="doctor-dept">قسم طب الأطفال</p>
+        </article>
+
+        <article class="doctor-card reveal-up">
+          <div class="doctor-avatar avatar-f">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          </div>
+          <span class="doctor-badge">قريباً</span>
+          <h3>أخصائية العلاج الطبيعي</h3>
+          <p class="doctor-dept">قسم العلاج الطبيعي</p>
+        </article>
+
+        <article class="doctor-card reveal-up">
+          <div class="doctor-avatar avatar-n">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          </div>
+          <span class="doctor-badge">قريباً</span>
+          <h3>استشاري الباطنية</h3>
+          <p class="doctor-dept">قسم الأمراض الباطنية</p>
+        </article>
+
+        <article class="doctor-card reveal-up">
+          <div class="doctor-avatar avatar-n">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          </div>
+          <span class="doctor-badge">قريباً</span>
+          <h3>استشاري الروماتيزم</h3>
+          <p class="doctor-dept">قسم الروماتيزم</p>
+        </article>
+
+        <article class="doctor-card reveal-up">
+          <div class="doctor-avatar avatar-n">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          </div>
+          <span class="doctor-badge">قريباً</span>
+          <h3>استشاري العمود الفقري والأعصاب</h3>
+          <p class="doctor-dept">قسم العمود الفقري والأعصاب</p>
+        </article>
+
+        <article class="doctor-card reveal-up">
+          <div class="doctor-avatar avatar-f">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          </div>
+          <span class="doctor-badge">قريباً</span>
+          <h3>استشارية النسائية والتوليد</h3>
+          <p class="doctor-dept">قسم النسائية والتوليد</p>
+        </article>
+
+        <article class="doctor-card reveal-up">
+          <div class="doctor-avatar avatar-f">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          </div>
+          <span class="doctor-badge">قريباً</span>
+          <h3>أخصائية التغذية العلاجية</h3>
+          <p class="doctor-dept">قسم التغذية العلاجية</p>
+        </article>
+
+        <article class="doctor-card reveal-up">
+          <div class="doctor-avatar avatar-m">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          </div>
+          <span class="doctor-badge">قريباً</span>
+          <h3>استشاري الجلدية والتناسلية</h3>
+          <p class="doctor-dept">قسم الجلدية والتناسلية</p>
+        </article>
+
+        <article class="doctor-card reveal-up">
+          <div class="doctor-avatar avatar-n">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          </div>
+          <span class="doctor-badge">قريباً</span>
+          <h3>استشاري الكلى والمسالك البولية</h3>
+          <p class="doctor-dept">قسم الكلى والمسالك البولية</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Location ===== -->
+  <section class="location" id="location">
+    <div class="container location-inner">
+      <div class="location-info reveal-up">
+        <p class="eyebrow">موقعنا</p>
+        <h2>زورونا في عيادات نبض</h2>
+        <p class="section-desc">نستقبلكم في موقع مميز يسهل الوصول إليه، مجهز لتقديم أفضل رعاية صحية لكم ولعائلتكم.</p>
+
+        <div class="address-card">
+          <div class="address-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-11.5A7 7 0 0 1 19 9.5C19 14.5 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          </div>
+          <div class="address-text">
+            <strong>العنوان</strong>
+            <span>الرحاب – المركز الطبي الأول – الطابق الثاني – عيادة 203</span>
+          </div>
+        </div>
+
+        <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+           href="https://www.google.com/maps/search/?api=1&query=3F5R%2BMP%20Second%20New%20Cairo%2C%20Egypt">
+          <span>احصل على الاتجاهات</span>
+          <svg viewBox="0 0 24 24" class="icon-inline"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="location-visual reveal-up">
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=3F5R%2BMP%20Second%20New%20Cairo%2C%20Egypt&output=embed"
+            title="خريطة موقع عيادات نبض التخصصية"
+            loading="lazy"
+            tabindex="-1"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <div class="map-pin" aria-hidden="true">
+            <span class="map-pin-ring"></span>
+            <span class="map-pin-ring map-pin-ring-delay"></span>
+            <span class="map-pin-dot"></span>
+          </div>
+
+          <a class="map-overlay" target="_blank" rel="noopener noreferrer"
+             href="https://www.google.com/maps/search/?api=1&query=3F5R%2BMP%20Second%20New%20Cairo%2C%20Egypt"
+             aria-label="فتح موقع عيادات نبض على خرائط جوجل"></a>
+        </div>
+        <div class="map-badge">
+          <img src="assets/logo-transparent.png" alt="عيادات نبض التخصصية">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <p class="eyebrow">تواصل معنا</p>
+        <h2>نحن هنا لخدمتكم</h2>
+        <p class="section-desc">تواصلوا معنا عبر الهاتف أو واتساب أو البريد الإلكتروني، وسيسعدنا الرد على استفساراتكم وحجز موعدكم.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <a href="tel:+201097963216" class="contact-card reveal-up">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          </div>
+          <h3>اتصل بنا</h3>
+          <p class="contact-value" dir="ltr">+20 109 796 3216</p>
+        </a>
+
+        <a href="https://wa.me/201097963216" target="_blank" rel="noopener noreferrer" class="contact-card contact-card-whatsapp reveal-up">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 21l1.65-4.95A8.5 8.5 0 1 1 8.4 19.3L3 21Z"/><path d="M8.5 9.5c0 3.5 2.5 6 6 6 .5 0 1-.5 1-1.2 0-.3-.15-.55-.4-.7l-1.7-1.05c-.25-.15-.55-.15-.8 0l-.6.4a5 5 0 0 1-2.5-2.5l.4-.6c.15-.25.15-.55 0-.8L8.85 6.55c-.15-.25-.4-.4-.7-.4-.7 0-1.2.5-1.2 1 0 .1.01.2.03.3"/></svg>
+          </div>
+          <h3>واتساب</h3>
+          <p class="contact-value" dir="ltr">+20 109 796 3216</p>
+        </a>
+
+        <a href="mailto:nabd77860@gmail.com" class="contact-card reveal-up">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="m3 6.5 9 6 9-6"/></svg>
+          </div>
+          <h3>البريد الإلكتروني</h3>
+          <p class="contact-value" dir="ltr">nabd77860@gmail.com</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<a href="https://wa.me/201097963216" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="تواصل معنا عبر واتساب">
+  <svg viewBox="0 0 24 24"><path d="M3 21l1.65-4.95A8.5 8.5 0 1 1 8.4 19.3L3 21Z"/><path d="M8.5 9.5c0 3.5 2.5 6 6 6 .5 0 1-.5 1-1.2 0-.3-.15-.55-.4-.7l-1.7-1.05c-.25-.15-.55-.15-.8 0l-.6.4a5 5 0 0 1-2.5-2.5l.4-.6c.15-.25.15-.55 0-.8L8.85 6.55c-.15-.25-.4-.4-.7-.4-.7 0-1.2.5-1.2 1 0 .1.01.2.03.3"/></svg>
+</a>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo-transparent.png" alt="شعار عيادات نبض التخصصية" class="footer-logo">
+      <p>رعاية صحية متكاملة في مكان واحد.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="روابط الفوتر">
+      <a href="#about">عن العيادة</a>
+      <a href="#departments">الأقسام</a>
+      <a href="#doctors">أطباؤنا</a>
+      <a href="#location">الموقع</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+
+    <div class="footer-contact">
+      <a href="tel:+201097963216" dir="ltr">+20 109 796 3216</a>
+      <a href="mailto:nabd77860@gmail.com">nabd77860@gmail.com</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> عيادات نبض التخصصية. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<a href="#hero" class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
