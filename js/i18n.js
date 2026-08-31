@@ -108,6 +108,7 @@
       'footer.tagline': 'رعاية صحية متكاملة في مكان واحد.',
       'footer.navAria': 'روابط الفوتر',
       'footer.rights': 'عيادات نبض التخصصية. جميع الحقوق محفوظة.',
+      'footer.madeBy': 'صُنع بواسطة',
 
       'backToTop.aria': 'العودة للأعلى'
     },
@@ -217,6 +218,7 @@
       'footer.tagline': 'Complete healthcare, all in one place.',
       'footer.navAria': 'Footer links',
       'footer.rights': 'Nabd Specialized Clinics. All rights reserved.',
+      'footer.madeBy': 'Made by',
 
       'backToTop.aria': 'Back to top'
     }

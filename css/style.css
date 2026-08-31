@@ -519,6 +519,11 @@ section { padding: 110px 0; }
 .footer-contact a { font-weight: 600; opacity: .85; transition: opacity .25s; }
 .footer-contact a:hover { opacity: 1; color: var(--color-accent-light); }
 .footer-bottom { padding: 22px 24px; text-align: center; font-size: 0.85rem; color: rgba(255,255,255,0.6); }
+.footer-credit {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  margin-top: 10px; font-size: 0.8rem; color: rgba(255,255,255,0.5);
+}
+.footer-credit-logo { height: 30px; width: auto; opacity: 0.92; }
 
 /* ===================================================================
    Back to top
