@@ -28,7 +28,6 @@
   navToggle.addEventListener('click', function () {
     var isOpen = mainNav.classList.toggle('is-open');
     navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    navToggle.setAttribute('aria-label', isOpen ? 'إغلاق القائمة' : 'فتح القائمة');
   });
   mainNav.querySelectorAll('.nav-link').forEach(function (link) {
     link.addEventListener('click', function () {
