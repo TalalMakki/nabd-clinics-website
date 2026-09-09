@@ -45,10 +45,10 @@
       <span class="lang-toggle-label">English</span>
     </button>
 
-    <a href="https://wa.me/201097963216" target="_blank" rel="noopener noreferrer" class="btn btn-primary header-cta">
+    <button type="button" class="btn btn-primary header-cta js-open-booking">
       <span data-i18n="nav.bookAppointment">احجز موعدك</span>
       <svg viewBox="0 0 24 24" class="icon-inline"><path d="M12 21c-4.97-4.2-8-7.66-8-11.2A5.8 5.8 0 0 1 9.8 4c1.64 0 3.13.8 4.2 2.05A5.75 5.75 0 0 1 18.2 4 5.8 5.8 0 0 1 24 9.8"/></svg>
-    </a>
+    </button>
 
     <button class="nav-toggle" id="navToggle" data-i18n-aria-label="nav.toggleMenu" aria-label="فتح/إغلاق القائمة" aria-expanded="false" aria-controls="mainNav">
       <span></span><span></span><span></span>
@@ -250,90 +250,121 @@
       <div class="section-head reveal-up">
         <p class="eyebrow" data-i18n="doctors.eyebrow">فريقنا الطبي</p>
         <h2 data-i18n="doctors.title">أطباء كل تخصص</h2>
-        <p class="section-desc" data-i18n="doctors.desc">مقعد بانتظار كل استشاري — بيانات الأطباء وصورهم قيد الإضافة حالياً وسيتم تحديثها قريباً.</p>
+        <p class="section-desc" data-i18n="doctors.desc">تعرّفوا على نخبة الأطباء والاستشاريين المتخصصين الذين يقدمون الرعاية في عياداتنا.</p>
       </div>
 
       <div class="doctors-grid">
 
         <article class="doctor-card reveal-up">
-          <div class="doctor-avatar avatar-f">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <div class="doctor-avatar">
+            <img src="assets/dr-ayman-alshamali.jpeg" data-i18n-alt="doctors.d1Name" alt="د. أيمن الشاملي" loading="lazy">
           </div>
-          <span class="doctor-badge" data-i18n="doctors.badge">قريباً</span>
-          <h3 data-i18n="doctors.d1Title">استشارية طب الأطفال</h3>
-          <p class="doctor-dept" data-i18n="doctors.d1Dept">قسم طب الأطفال</p>
+          <h3 data-i18n="doctors.d1Name">د. أيمن الشاملي</h3>
+          <p class="doctor-dept" data-i18n="doctors.d1Spec">باطنة وأمراض كلى وسكر</p>
         </article>
 
         <article class="doctor-card reveal-up">
-          <div class="doctor-avatar avatar-f">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <div class="doctor-avatar">
+            <img src="assets/dr-shady-samir-ghait.jpeg" data-i18n-alt="doctors.d2Name" alt="د. شادي سمير غيط" loading="lazy">
           </div>
-          <span class="doctor-badge" data-i18n="doctors.badge">قريباً</span>
-          <h3 data-i18n="doctors.d2Title">أخصائية العلاج الطبيعي</h3>
-          <p class="doctor-dept" data-i18n="doctors.d2Dept">قسم العلاج الطبيعي</p>
+          <h3 data-i18n="doctors.d2Name">د. شادي سمير غيط</h3>
+          <p class="doctor-dept" data-i18n="doctors.d2Spec">باطنة وجهاز هضمي ومناظير</p>
         </article>
 
         <article class="doctor-card reveal-up">
-          <div class="doctor-avatar avatar-n">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <div class="doctor-avatar">
+            <img src="assets/dr-hossam-abdo.jpeg" data-i18n-alt="doctors.d3Name" alt="د. حسام عبده" loading="lazy">
           </div>
-          <span class="doctor-badge" data-i18n="doctors.badge">قريباً</span>
-          <h3 data-i18n="doctors.d3Title">استشاري الباطنية</h3>
-          <p class="doctor-dept" data-i18n="doctors.d3Dept">قسم الأمراض الباطنية</p>
+          <h3 data-i18n="doctors.d3Name">د. حسام عبده</h3>
+          <p class="doctor-dept" data-i18n="doctors.d3Spec">استشاري جراحة عامة</p>
         </article>
 
         <article class="doctor-card reveal-up">
-          <div class="doctor-avatar avatar-n">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <div class="doctor-avatar">
+            <img src="assets/dr-nidal-obeido.jpeg" data-i18n-alt="doctors.d4Name" alt="د. نضال عبيدو" loading="lazy">
           </div>
-          <span class="doctor-badge" data-i18n="doctors.badge">قريباً</span>
-          <h3 data-i18n="doctors.d4Title">استشاري الروماتيزم</h3>
-          <p class="doctor-dept" data-i18n="doctors.d4Dept">قسم الروماتيزم</p>
+          <h3 data-i18n="doctors.d4Name">د. نضال عبيدو</h3>
+          <p class="doctor-dept" data-i18n="doctors.d4Spec">استشاري جراحة بدانة</p>
         </article>
 
         <article class="doctor-card reveal-up">
-          <div class="doctor-avatar avatar-n">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <div class="doctor-avatar">
+            <img src="assets/dr-muhannad-kanawati.jpeg" data-i18n-alt="doctors.d5Name" alt="د. مهند قنواتي" loading="lazy">
           </div>
-          <span class="doctor-badge" data-i18n="doctors.badge">قريباً</span>
-          <h3 data-i18n="doctors.d5Title">استشاري العمود الفقري والأعصاب</h3>
-          <p class="doctor-dept" data-i18n="doctors.d5Dept">قسم العمود الفقري والأعصاب</p>
+          <h3 data-i18n="doctors.d5Name">د. مهند قنواتي</h3>
+          <p class="doctor-dept" data-i18n="doctors.d5Spec">استشاري عظام</p>
         </article>
 
         <article class="doctor-card reveal-up">
-          <div class="doctor-avatar avatar-f">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <div class="doctor-avatar">
+            <img src="assets/dr-sobhi-kanawati.jpeg" data-i18n-alt="doctors.d6Name" alt="د. صبحي قنواتي" loading="lazy">
           </div>
-          <span class="doctor-badge" data-i18n="doctors.badge">قريباً</span>
-          <h3 data-i18n="doctors.d6Title">استشارية النسائية والتوليد</h3>
-          <p class="doctor-dept" data-i18n="doctors.d6Dept">قسم النسائية والتوليد</p>
+          <h3 data-i18n="doctors.d6Name">د. صبحي قنواتي</h3>
+          <p class="doctor-dept" data-i18n="doctors.d6Spec">مخ وأعصاب</p>
         </article>
 
         <article class="doctor-card reveal-up">
-          <div class="doctor-avatar avatar-f">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <div class="doctor-avatar">
+            <img src="assets/dr-sahar-samman.jpeg" data-i18n-alt="doctors.d7Name" alt="د. سحر سمان" loading="lazy">
           </div>
-          <span class="doctor-badge" data-i18n="doctors.badge">قريباً</span>
-          <h3 data-i18n="doctors.d7Title">أخصائية التغذية العلاجية</h3>
-          <p class="doctor-dept" data-i18n="doctors.d7Dept">قسم التغذية العلاجية</p>
+          <h3 data-i18n="doctors.d7Name">د. سحر سمان</h3>
+          <p class="doctor-dept" data-i18n="doctors.d7Spec">نساء وتوليد</p>
         </article>
 
         <article class="doctor-card reveal-up">
-          <div class="doctor-avatar avatar-m">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <div class="doctor-avatar">
+            <img src="assets/dr-lina-maatouk.jpeg" data-i18n-alt="doctors.d8Name" alt="د. لينا معتوق" loading="lazy">
           </div>
-          <span class="doctor-badge" data-i18n="doctors.badge">قريباً</span>
-          <h3 data-i18n="doctors.d8Title">استشاري الجلدية والتناسلية</h3>
-          <p class="doctor-dept" data-i18n="doctors.d8Dept">قسم الجلدية والتناسلية</p>
+          <h3 data-i18n="doctors.d8Name">د. لينا معتوق</h3>
+          <p class="doctor-dept" data-i18n="doctors.d8Spec">أطفال وحديثي ولادة</p>
         </article>
 
         <article class="doctor-card reveal-up">
-          <div class="doctor-avatar avatar-n">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <div class="doctor-avatar">
+            <img src="assets/dr-hamza-saqan.jpeg" data-i18n-alt="doctors.d9Name" alt="د. حمزة سقعان" loading="lazy">
           </div>
-          <span class="doctor-badge" data-i18n="doctors.badge">قريباً</span>
-          <h3 data-i18n="doctors.d9Title">استشاري الكلى والمسالك البولية</h3>
-          <p class="doctor-dept" data-i18n="doctors.d9Dept">قسم الكلى والمسالك البولية</p>
+          <h3 data-i18n="doctors.d9Name">د. حمزة سقعان</h3>
+          <p class="doctor-dept" data-i18n="doctors.d9Spec">جلدية</p>
+        </article>
+
+        <article class="doctor-card reveal-up">
+          <div class="doctor-avatar">
+            <img src="assets/dr-stephen-samman.jpeg" data-i18n-alt="doctors.d10Name" alt="د. ستيفن سمان" loading="lazy">
+          </div>
+          <h3 data-i18n="doctors.d10Name">د. ستيفن سمان</h3>
+          <p class="doctor-dept" data-i18n="doctors.d10Spec">علاج طبيعي</p>
+        </article>
+
+        <article class="doctor-card reveal-up">
+          <div class="doctor-avatar">
+            <img src="assets/dr-nour-talal.jpeg" data-i18n-alt="doctors.d11Name" alt="د. نور طلال" loading="lazy">
+          </div>
+          <h3 data-i18n="doctors.d11Name">د. نور طلال</h3>
+          <p class="doctor-dept" data-i18n="doctors.d11Spec">علاج طبيعي</p>
+        </article>
+
+        <article class="doctor-card reveal-up">
+          <div class="doctor-avatar">
+            <img src="assets/dr-hadi-daas.jpeg" data-i18n-alt="doctors.d12Name" alt="د. هادي دعاس" loading="lazy">
+          </div>
+          <h3 data-i18n="doctors.d12Name">د. هادي دعاس</h3>
+          <p class="doctor-dept" data-i18n="doctors.d12Spec">علاج طبيعي</p>
+        </article>
+
+        <article class="doctor-card reveal-up">
+          <div class="doctor-avatar">
+            <img src="assets/dr-wael-ajala.jpeg" data-i18n-alt="doctors.d13Name" alt="د. وائل عجلة" loading="lazy">
+          </div>
+          <h3 data-i18n="doctors.d13Name">د. وائل عجلة</h3>
+          <p class="doctor-dept" data-i18n="doctors.d13Spec">تغذية علاجية</p>
+        </article>
+
+        <article class="doctor-card reveal-up">
+          <div class="doctor-avatar">
+            <img src="assets/dr-wafaa-bashir.jpeg" data-i18n-alt="doctors.d14Name" alt="د. وفاء بشير" loading="lazy">
+          </div>
+          <h3 data-i18n="doctors.d14Name">د. وفاء بشير</h3>
+          <p class="doctor-dept" data-i18n="doctors.d14Spec">روماتيزم وأمراض مناعة</p>
         </article>
 
       </div>
@@ -473,9 +504,70 @@
   <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
 </a>
 
+<!-- ===== Booking Modal ===== -->
+<div class="modal-overlay" id="bookingOverlay" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+    <button type="button" class="modal-close" id="bookingClose" data-i18n-aria-label="booking.close" aria-label="إغلاق">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+
+    <h3 id="bookingTitle" data-i18n="booking.title">احجز موعدك</h3>
+    <p class="modal-subtitle" data-i18n="booking.subtitle">عبّئوا البيانات وسيتم تحويلكم إلى واتساب لإرسال طلب الحجز.</p>
+
+    <form id="bookingForm" novalidate>
+      <div class="form-field">
+        <label for="bkName" data-i18n="booking.name">اسم المريض</label>
+        <input type="text" id="bkName" name="bkName" required autocomplete="name">
+      </div>
+
+      <div class="form-field">
+        <label for="bkAge" data-i18n="booking.age">العمر</label>
+        <input type="number" id="bkAge" name="bkAge" min="0" max="120" required>
+      </div>
+
+      <div class="form-field">
+        <label for="bkPhone" data-i18n="booking.phone">رقم الهاتف</label>
+        <input type="tel" id="bkPhone" name="bkPhone" required autocomplete="tel">
+      </div>
+
+      <div class="form-field">
+        <label for="bkDept" data-i18n="booking.department">القسم</label>
+        <select id="bkDept" name="bkDept" required>
+          <option value="" data-i18n="booking.departmentPlaceholder">اختر القسم</option>
+          <option value="pediatrics" data-i18n="dept.d1Title">طب الأطفال</option>
+          <option value="physiotherapy" data-i18n="dept.d2Title">العلاج الطبيعي</option>
+          <option value="internalMedicine" data-i18n="dept.d3Title">الأمراض الباطنية</option>
+          <option value="rheumatology" data-i18n="dept.d4Title">الروماتيزم</option>
+          <option value="spineNeuro" data-i18n="dept.d5Title">العمود الفقري والأعصاب</option>
+          <option value="obgyn" data-i18n="dept.d6Title">النسائية والتوليد</option>
+          <option value="nutrition" data-i18n="dept.d7Title">التغذية العلاجية</option>
+          <option value="dermatology" data-i18n="dept.d8Title">الجلدية والتناسلية</option>
+          <option value="nephrology" data-i18n="dept.d9Title">الكلى والمسالك البولية</option>
+          <option value="generalSurgery" data-i18n="booking.deptSurgery">الجراحة العامة</option>
+          <option value="bariatricSurgery" data-i18n="booking.deptBariatric">جراحة السمنة</option>
+          <option value="orthopedics" data-i18n="booking.deptOrtho">العظام</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="bkDoctor" data-i18n="booking.doctor">الطبيب</label>
+        <select id="bkDoctor" name="bkDoctor" required disabled>
+          <option value="" data-i18n="booking.doctorPlaceholderLocked">اختر القسم أولاً</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary modal-submit">
+        <span data-i18n="booking.submit">إرسال عبر واتساب</span>
+        <svg viewBox="0 0 24 24" class="icon-inline"><path d="M3 21l1.65-4.95A8.5 8.5 0 1 1 8.4 19.3L3 21Z"/><path d="M8.5 9.5c0 3.5 2.5 6 6 6 .5 0 1-.5 1-1.2 0-.3-.15-.55-.4-.7l-1.7-1.05c-.25-.15-.55-.15-.8 0l-.6.4a5 5 0 0 1-2.5-2.5l.4-.6c.15-.25.15-.55 0-.8L8.85 6.55c-.15-.25-.4-.4-.7-.4-.7 0-1.2.5-1.2 1 0 .1.01.2.03.3"/></svg>
+      </button>
+    </form>
+  </div>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
+<script src="js/booking.js"></script>
 </body>
 </html>

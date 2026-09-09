@@ -120,6 +120,7 @@ svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width:
   font-weight: 700;
   font-size: 0.98rem;
   border: 2px solid transparent;
+  appearance: none;
   transition: transform .25s var(--ease-out-back), box-shadow .25s var(--ease-standard), background .25s, color .25s, border-color .25s;
   white-space: nowrap;
 }
@@ -359,23 +360,17 @@ section { padding: 110px 0; }
 }
 .doctor-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-md); }
 .doctor-avatar {
-  width: 92px; height: 92px; margin: 0 auto 18px;
+  width: 100px; height: 100px; margin: 0 auto 18px;
   border-radius: 50%;
-  padding: 22px;
-  color: #fff;
-  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  border: 3px solid var(--color-bg);
+  box-shadow: var(--shadow-sm), 0 0 0 3px var(--color-border);
 }
-.avatar-f { background: linear-gradient(135deg, var(--color-accent-light), var(--color-accent-dark)); }
-.avatar-m { background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary-dark)); }
-.avatar-n { background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); }
-.doctor-badge {
-  position: absolute; top: 18px; left: 18px;
-  font-size: 0.72rem; font-weight: 700;
-  color: var(--color-accent);
-  background: rgba(197,1,11,0.1);
-  padding: 5px 12px;
-  border-radius: var(--radius-full);
+.doctor-avatar img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform .5s var(--ease-standard);
 }
+.doctor-card:hover .doctor-avatar img { transform: scale(1.08); }
 .doctor-card h3 { font-size: 1.05rem; margin-bottom: 6px; line-height: 1.4; }
 .doctor-dept { color: var(--color-ink-soft); font-size: 0.9rem; font-weight: 600; }
 
@@ -542,6 +537,66 @@ section { padding: 110px 0; }
 .back-to-top svg { width: 20px; height: 20px; }
 .back-to-top.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
 .back-to-top:hover { background: var(--color-accent); }
+
+/* ===================================================================
+   Booking Modal
+=================================================================== */
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 2000;
+  background: rgba(13, 39, 51, 0.55);
+  backdrop-filter: blur(4px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+  opacity: 0; visibility: hidden;
+  transition: opacity .3s var(--ease-standard), visibility .3s;
+}
+.modal-overlay.is-open { opacity: 1; visibility: visible; }
+.modal-card {
+  position: relative;
+  width: 100%; max-width: 460px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 36px 30px 30px;
+  transform: scale(.94) translateY(10px);
+  opacity: 0;
+  transition: transform .35s var(--ease-out-back), opacity .3s var(--ease-standard);
+}
+.modal-overlay.is-open .modal-card { transform: scale(1) translateY(0); opacity: 1; }
+.modal-card h3 { font-size: 1.4rem; margin-bottom: 8px; }
+.modal-subtitle { color: var(--color-ink-soft); font-size: 0.92rem; margin-bottom: 24px; }
+.modal-close {
+  position: absolute; top: 16px; inset-inline-end: 16px;
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--color-bg-alt);
+  color: var(--color-ink-soft);
+  display: flex; align-items: center; justify-content: center;
+  border: none; transition: background .25s, color .25s, transform .25s;
+}
+.modal-close svg { width: 16px; height: 16px; }
+.modal-close:hover { background: var(--color-accent); color: #fff; transform: rotate(90deg); }
+
+.form-field { margin-bottom: 16px; text-align: start; }
+.form-field label { display: block; font-weight: 700; font-size: 0.88rem; color: var(--color-primary-dark); margin-bottom: 6px; }
+.form-field input, .form-field select {
+  width: 100%;
+  font: inherit;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-ink);
+  transition: border-color .25s, box-shadow .25s;
+}
+.form-field input:focus, .form-field select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(1,99,148,.12);
+}
+.form-field select:disabled { color: var(--color-ink-soft); cursor: not-allowed; }
+.modal-submit { width: 100%; justify-content: center; margin-top: 6px; }
 
 /* ===================================================================
    Responsive
