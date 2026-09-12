@@ -13,7 +13,8 @@
     nephrology: ['doctors.d1Name'],
     generalSurgery: ['doctors.d3Name'],
     bariatricSurgery: ['doctors.d4Name'],
-    orthopedics: ['doctors.d5Name']
+    orthopedics: ['doctors.d5Name'],
+    nursing: ['booking.nursingTeam']
   };
 
   function t(key) {
@@ -27,8 +28,34 @@
   var nameInput = document.getElementById('bkName');
   var ageInput = document.getElementById('bkAge');
   var phoneInput = document.getElementById('bkPhone');
+  var addressField = document.getElementById('bkAddressField');
+  var addressInput = document.getElementById('bkAddress');
   var closeBtn = document.getElementById('bookingClose');
   var lastFocused = null;
+  var lastCoords = null;
+
+  function requestLocation() {
+    if (!navigator.geolocation) return;
+    navigator.geolocation.getCurrentPosition(
+      function (pos) {
+        lastCoords = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+      },
+      function () { lastCoords = null; },
+      { enableHighAccuracy: true, timeout: 8000 }
+    );
+  }
+
+  function updateAddressVisibility(deptKey) {
+    var isNursing = deptKey === 'nursing';
+    addressField.hidden = !isNursing;
+    addressInput.required = isNursing;
+    if (isNursing) {
+      requestLocation();
+    } else {
+      lastCoords = null;
+      addressInput.value = '';
+    }
+  }
 
   function populateDoctors(deptKey) {
     doctorSelect.innerHTML = '';
@@ -56,6 +83,7 @@
 
   deptSelect.addEventListener('change', function () {
     populateDoctors(deptSelect.value);
+    updateAddressVisibility(deptSelect.value);
   });
 
   document.addEventListener('nabd:langchange', function () {
@@ -98,6 +126,7 @@
 
     var deptLabel = deptSelect.options[deptSelect.selectedIndex].textContent;
     var doctorLabel = doctorSelect.options[doctorSelect.selectedIndex].textContent;
+    var isNursing = deptSelect.value === 'nursing';
 
     var lines = [
       t('booking.msgTitle'),
@@ -108,13 +137,22 @@
       t('booking.msgDoctor') + ': ' + doctorLabel
     ];
 
+    if (isNursing) {
+      lines.push(t('booking.msgAddress') + ': ' + addressInput.value.trim());
+      if (lastCoords) {
+        lines.push(t('booking.msgLocation') + ': https://www.google.com/maps?q=' + lastCoords.lat + ',' + lastCoords.lng);
+      }
+    }
+
     var url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(lines.join('\n'));
     window.open(url, '_blank', 'noopener');
 
     closeModal();
     form.reset();
     populateDoctors('');
+    updateAddressVisibility('');
   });
 
   populateDoctors('');
+  updateAddressVisibility('');
 })();

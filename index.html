@@ -95,7 +95,7 @@
 
       <div class="hero-stats hero-reveal">
         <div class="stat">
-          <span class="stat-num" data-count="9">0</span>
+          <span class="stat-num" data-count="10">0</span>
           <span class="stat-label" data-i18n="hero.stat1Label">تخصصات طبية</span>
         </div>
         <div class="stat-sep"></div>
@@ -119,10 +119,15 @@
   <!-- ===== About / Why us ===== -->
   <section class="about" id="about">
     <div class="container">
-      <div class="section-head reveal-up">
-        <p class="eyebrow" data-i18n="about.eyebrow">لماذا نبض</p>
-        <h2 data-i18n="about.title">رعاية صحية شاملة بمعايير موثوقة</h2>
-        <p class="section-desc" data-i18n="about.desc">نجمع لكم نخبة من الاستشاريين والأخصائيين تحت سقف واحد، لتوفير الوقت والجهد وضمان استمرارية المتابعة الطبية.</p>
+      <div class="about-intro">
+        <div class="about-intro-text reveal-up">
+          <p class="eyebrow" data-i18n="about.eyebrow">لماذا نبض</p>
+          <h2 data-i18n="about.title">رعاية صحية شاملة بمعايير موثوقة</h2>
+          <p class="section-desc" data-i18n="about.desc">نجمع لكم نخبة من الاستشاريين والأخصائيين تحت سقف واحد، لتوفير الوقت والجهد وضمان استمرارية المتابعة الطبية.</p>
+        </div>
+        <div class="about-photo reveal-up">
+          <img src="assets/intrance.jpeg" data-i18n-alt="about.photoAlt" alt="استقبال عيادات نبض التخصصية" loading="lazy">
+        </div>
       </div>
 
       <div class="features-grid">
@@ -244,6 +249,14 @@
           <p data-i18n="dept.d9Desc">تشخيص وعلاج أمراض الكلى والجهاز البولي بمتابعة دقيقة.</p>
         </article>
 
+        <article class="dept-card reveal-up">
+          <div class="dept-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3 data-i18n="dept.d10Title">التمريض على مدار الساعة</h3>
+          <p data-i18n="dept.d10Desc">طاقم تمريضي مؤهل متواجد على مدار الساعة لمتابعة رعايتكم في أي وقت.</p>
+        </article>
+
       </div>
     </div>
   </section>
@@ -263,8 +276,14 @@
           <div class="doctor-avatar">
             <img src="assets/dr-ayman-alshamali.jpeg" data-i18n-alt="doctors.d1Name" alt="د. أيمن الشاملي" loading="lazy">
           </div>
-          <h3 data-i18n="doctors.d1Name">د. أيمن الشاملي</h3>
+          <h3 data-i18n="doctors.d1Name">اللواء الدكتور أيمن الشاملي</h3>
           <p class="doctor-dept" data-i18n="doctors.d1Spec">باطنة وأمراض كلى وسكر</p>
+          <ul class="doctor-credentials">
+            <li data-i18n="doctors.d1Cred1">عضو الأكاديمية الطبية العسكرية لأمراض الكلى والسكر</li>
+            <li data-i18n="doctors.d1Cred2">عضو الجمعية المصرية لأمراض الكلى</li>
+            <li data-i18n="doctors.d1Cred3">استشاري باطنة عامة وغدد صماء - جامعة عين شمس</li>
+            <li data-i18n="doctors.d1Cred4">استشاري أمراض الكلى بمستشفيات القوات المسلحة</li>
+          </ul>
         </article>
 
         <article class="doctor-card reveal-up">
@@ -273,6 +292,11 @@
           </div>
           <h3 data-i18n="doctors.d2Name">د. شادي سمير غيط</h3>
           <p class="doctor-dept" data-i18n="doctors.d2Spec">باطنة وجهاز هضمي ومناظير</p>
+          <ul class="doctor-credentials">
+            <li data-i18n="doctors.d2Cred1">دكتوراه الباطنة والجهاز الهضمي</li>
+            <li data-i18n="doctors.d2Cred2">مدرس الباطنة - جامعة عين شمس</li>
+            <li data-i18n="doctors.d2Cred3">استشاري الباطنة والجهاز الهضمي والكبد والسكر والمناظير</li>
+          </ul>
         </article>
 
         <article class="doctor-card reveal-up">
@@ -281,6 +305,9 @@
           </div>
           <h3 data-i18n="doctors.d3Name">د. حسام عبده</h3>
           <p class="doctor-dept" data-i18n="doctors.d3Spec">استشاري جراحة عامة</p>
+          <ul class="doctor-credentials">
+            <li data-i18n="doctors.d3Cred1">دكتوراه الجراحة العامة والمناظير</li>
+          </ul>
         </article>
 
         <article class="doctor-card reveal-up">
@@ -297,6 +324,9 @@
           </div>
           <h3 data-i18n="doctors.d5Name">د. مهند قنواتي</h3>
           <p class="doctor-dept" data-i18n="doctors.d5Spec">استشاري عظام</p>
+          <ul class="doctor-credentials">
+            <li data-i18n="doctors.d5Cred1">استشاري جراحة عظام ومفاصل</li>
+          </ul>
         </article>
 
         <article class="doctor-card reveal-up">
@@ -305,6 +335,9 @@
           </div>
           <h3 data-i18n="doctors.d6Name">د. صبحي قنواتي</h3>
           <p class="doctor-dept" data-i18n="doctors.d6Spec">مخ وأعصاب</p>
+          <ul class="doctor-credentials">
+            <li data-i18n="doctors.d6Cred1">استشاري جراحة المخ والأعصاب والعمود الفقري</li>
+          </ul>
         </article>
 
         <article class="doctor-card reveal-up">
@@ -321,6 +354,9 @@
           </div>
           <h3 data-i18n="doctors.d8Name">د. لينا معتوق</h3>
           <p class="doctor-dept" data-i18n="doctors.d8Spec">أطفال وحديثي ولادة</p>
+          <ul class="doctor-credentials">
+            <li data-i18n="doctors.d8Cred1">استشاري أطفال وحديثي ولادة</li>
+          </ul>
         </article>
 
         <article class="doctor-card reveal-up">
@@ -361,6 +397,9 @@
           </div>
           <h3 data-i18n="doctors.d13Name">د. وائل عجلة</h3>
           <p class="doctor-dept" data-i18n="doctors.d13Spec">تغذية علاجية</p>
+          <ul class="doctor-credentials">
+            <li data-i18n="doctors.d13Cred1">دكتور صيدلي ورياضي، متخصص في التغذية والتغذية السريرية والتغذية الرياضية، بخبرة تتجاوز 10 سنوات في التغذية واللياقة والاستشارات الغذائية</li>
+          </ul>
         </article>
 
         <article class="doctor-card reveal-up">
@@ -369,6 +408,13 @@
           </div>
           <h3 data-i18n="doctors.d14Name">د. وفاء بشير</h3>
           <p class="doctor-dept" data-i18n="doctors.d14Spec">روماتيزم وأمراض مناعة</p>
+          <ul class="doctor-credentials">
+            <li data-i18n="doctors.d14Cred1">بكالوريوس الطب والجراحة - جامعة جوبا</li>
+            <li data-i18n="doctors.d14Cred2">زمالة الكلية البريطانية - لندن</li>
+            <li data-i18n="doctors.d14Cred3">عضو الجمعية الأمريكية لأمراض الروماتيزم</li>
+            <li data-i18n="doctors.d14Cred4">عضو الجمعية السودانية لأمراض الروماتيزم</li>
+            <li data-i18n="doctors.d14Cred5">عضو الرابطة الأوروبية لمكافحة أمراض الروماتيزم</li>
+          </ul>
         </article>
 
       </div>
@@ -550,6 +596,7 @@
           <option value="generalSurgery" data-i18n="booking.deptSurgery">الجراحة العامة</option>
           <option value="bariatricSurgery" data-i18n="booking.deptBariatric">جراحة السمنة</option>
           <option value="orthopedics" data-i18n="booking.deptOrtho">العظام</option>
+          <option value="nursing" data-i18n="dept.d10Title">التمريض على مدار الساعة</option>
         </select>
       </div>
 
@@ -558,6 +605,11 @@
         <select id="bkDoctor" name="bkDoctor" required disabled>
           <option value="" data-i18n="booking.doctorPlaceholderLocked">اختر القسم أولاً</option>
         </select>
+      </div>
+
+      <div class="form-field" id="bkAddressField" hidden>
+        <label for="bkAddress" data-i18n="booking.address">عنوان الزيارة المنزلية</label>
+        <input type="text" id="bkAddress" name="bkAddress" data-i18n-placeholder="booking.addressPlaceholder" placeholder="الحي، الشارع، رقم البناء">
       </div>
 
       <button type="submit" class="btn btn-primary modal-submit">
